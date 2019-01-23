@@ -1,12 +1,16 @@
 # performance-testing
 
-### Academic information system of SMA X Jakarta has several features such as user logins, creating new users, input data (student grades, student data, staff data, mutation student data), data updates, printed mutation letters, and printed scores. The technique used in testing this system is profiling. Profiling is an activity to measure program code, such as memory, execution time of a function or number of calls for a function. The tests performed are as follows:
+## Initiation 
+### The first step is do unit testing by right-clicking Build Solution, select Add and then select New Project. After that, select Unit Test Project Visual C#. Then, on Installed, breakdown Visual C#, select Windows, add Class Library. Next, in Solution Configurations toolbar box, replace Debug with Release. 
+
+### Academic information system of has several features such as user logins, creating new users, input data (student grades, student data, staff data, mutation student data), data updates, printed mutation letters, and printed scores. The technique used in testing this system is profiling. Profiling is an activity to measure program code, such as memory, execution time of a function or number of calls for a function. The tests performed are as follows:
 - Profiling the entire system
 - Memory Profiling
 - CPU Profiling
 - Instrumentation Profiling
 - Code Testing: Run Code Analysis on Solutions
 - Code Testing: Code Clones
+
 
 ##  Performance Profiling
 ### Unit testing is carried out. The results of unit testing are as follows:
