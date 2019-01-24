@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AC001336-326B-4692-AD0E-DBA3749D520F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FormLogin</RootNamespace>
+    <AssemblyName>FormLogin</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="InputDataStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputDataStaff.Designer.cs">
+      <DependentUpon>InputDataStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputDataNilai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputDataNilai.Designer.cs">
+      <DependentUpon>InputDataNilai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputDataJadwal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputDataJadwal.Designer.cs">
+      <DependentUpon>InputDataJadwal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputDataMatpel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputDataMatpel.Designer.cs">
+      <DependentUpon>InputDataMatpel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputDataGuru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputDataGuru.Designer.cs">
+      <DependentUpon>InputDataGuru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputDataSiswa2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputDataSiswa2.Designer.cs">
+      <DependentUpon>InputDataSiswa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputDataSiswa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputDataSiswa.Designer.cs">
+      <DependentUpon>InputDataSiswa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formsiswa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formsiswa.Designer.cs">
+      <DependentUpon>Formsiswa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formguru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formguru.Designer.cs">
+      <DependentUpon>Formguru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formstaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formstaff.Designer.cs">
+      <DependentUpon>Formstaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formkepalasekolah.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formkepalasekolah.Designer.cs">
+      <DependentUpon>Formkepalasekolah.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formkepalasekolah.resx">
+      <DependentUpon>Formkepalasekolah.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formstaff.resx">
+      <DependentUpon>Formstaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formguru.resx">
+      <DependentUpon>Formguru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formsiswa.resx">
+      <DependentUpon>Formsiswa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputDataGuru.resx">
+      <DependentUpon>InputDataGuru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputDataJadwal.resx">
+      <DependentUpon>InputDataJadwal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputDataMatpel.resx">
+      <DependentUpon>InputDataMatpel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputDataNilai.resx">
+      <DependentUpon>InputDataNilai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputDataSiswa.resx">
+      <DependentUpon>InputDataSiswa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputDataSiswa2.resx">
+      <DependentUpon>InputDataSiswa2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputDataStaff.resx">
+      <DependentUpon>InputDataStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

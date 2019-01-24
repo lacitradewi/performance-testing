@@ -1,0 +1,13 @@
+TYPE=VIEW
+query=select `akademik`.`dt_pljr`.`kd_pljrn` AS `kd_pljrn`,`akademik`.`dt_pljr`.`nm_pljrn` AS `nm_pljrn` from `akademik`.`dt_pljr`
+md5=36cbb9848632938b9497003112f0d18f
+updatable=1
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=2
+with_check_option=0
+revision=1
+timestamp=2015-04-08 15:35:38
+create-version=1
+source=select kd_pljrn,nm_pljrn from dt_pljr
